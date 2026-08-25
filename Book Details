@@ -1,0 +1,27 @@
+include<iostream>
+using namespace std;
+class book
+{
+public:
+string book_name;
+int id;
+int price;
+string author;
+void display()
+{
+cout<<"name of the Book= "<<book_name<<endl;
+cout<<"Book ID= "<<id<<endl;
+cout<<"Price of Book= "<<price<<endl;
+cout<<"Name of the Author= "<<author<<endl;
+}
+};
+int main()
+{
+book b1;
+b1.book_name="Data Structure: ";
+b1.id=1711;
+b1.price=799;
+b1.author="Michal Breman";
+b1.display();
+return 0;
+}
