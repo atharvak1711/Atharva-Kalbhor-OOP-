@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class employee
+{
+public:
+string name;
+int eid;
+float salary;
+//Parameterised constructor
+employee(string name, int eid, float salary)
+{
+this->name = name;
+this->eid = eid;
+this->salary = salary;
+cout<<"-==========Constructor is Called=========-"<<endl;
+}
+void display()
+{
+cout<<"Employee's Name is:- "<< name<<endl;
+cout<<"Employee's ID is:- "<<eid<<endl;
+cout<<"Empoyee's Salary is:- "<<salary<<endl;
+}
+//Destructor 
+~employee()
+{
+cout<<"-===Employee Record Removed from Memory (Destructor called)===-"<<endl;
+}
+};
+int main()
+{
+employee e1("Pranav Bamne", 45, 10000);
+e1.display();
+return 0;
+}
