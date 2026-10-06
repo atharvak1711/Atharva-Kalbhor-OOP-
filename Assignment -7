@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+
+class person
+{
+public:
+string name;
+int age;
+int contact;
+
+void display()
+{
+cout<<"\n-===CANDIDATE'S INFORMATION===-"<<endl;
+cout<<"Candidate's Name is: "<<name<<endl;
+cout<<"Candidate's Age is: "<<age<<endl;
+cout<<"Candidate's Contact Number is: "<<contact<<endl;
+}
+};
+
+class student : public person
+{
+public:
+int roll;
+string branch;
+
+void display1()
+{
+cout<<"Candidate's Roll Number is: "<<roll<<endl;
+cout<<"Candidate's Branch is: "<<branch<<endl;
+}
+};
+
+int main()
+{
+person p1;
+p1.name="Atharva Kalbhor";
+p1.age=18;
+p1.contact=9876567;
+p1.display();
+
+student s1;
+s1.roll=37;
+s1.branch="Artificial Intelligence & Maching Learning";
+s1.display1();
+
+return 0;
+}
